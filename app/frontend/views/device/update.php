@@ -5,10 +5,9 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Device */
 
-$this->title = 'Update Device: ' . $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Devices', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->title = 'Редактировать Склад ';
+$this->params['breadcrumbs'][] = ['label' => 'Устройства', 'url' => ['index']];
+$this->params['breadcrumbs'][] = 'Редактирование';
 ?>
 <div class="device-update">
 

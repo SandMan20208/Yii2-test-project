@@ -36,7 +36,11 @@ $this->params['breadcrumbs'][] = $this->title;
                 'label' => 'Название склада',
                 'value' => ArrayHelper::getValue($model,'store.store_name')
             ],
-            'created_at',
+            [
+                'attribute' => 'created_at',
+                'label' => 'Дата создания',
+                'format' => ['datetime', 'php:d.m.Y H:i'],
+            ],
         ],
     ]) ?>
 

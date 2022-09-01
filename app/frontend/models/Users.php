@@ -23,6 +23,7 @@ class Users extends ActiveRecord
 	{
 		return[
 				[['username'], 'string'],
+				[['username'], 'unique'],
 				[['password'], 'string'],
 			];	
 	}

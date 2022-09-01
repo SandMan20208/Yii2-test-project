@@ -27,13 +27,14 @@ class m220828_110145_create_store_table extends Migration
 
         $this->addForeignKey(
             'fk-store_id', 
-            'store', 
-            'id', 
             'device', 
             'store_id', 
-            'RESTRICT',
-            'RESTRICT'
-        );
+            'store', 
+            'id', 
+            'SET NULL',
+            'SET NULL'
+        ); 
+        
 
     }
 
@@ -43,7 +44,7 @@ class m220828_110145_create_store_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropForeignKey('fk-store_id', 'store');
+        $this->dropForeignKey('fk-store_id', 'device');
 
         $this->dropTable('{{%store}}');
 

@@ -26,8 +26,6 @@ class m220828_110107_create_device_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropIndex('idx-store_id', 'device');
-
         $this->dropTable('{{%device}}');
     }
 }

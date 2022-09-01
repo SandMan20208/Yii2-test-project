@@ -33,8 +33,7 @@ class m220828_110145_create_store_table extends Migration
             'id', 
             'SET NULL',
             'SET NULL'
-        ); 
-        
+        );      
 
     }
 

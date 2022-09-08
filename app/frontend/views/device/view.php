@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'serial_numb',
+            'serial_number',
             [
                 'attribute' => 'store_id',
                 'label' => 'Название склада',

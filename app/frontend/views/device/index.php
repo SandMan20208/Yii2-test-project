@@ -1,7 +1,7 @@
 <?php
 
-use frontend\models\Device;
-use frontend\models\Store;
+use common\models\ActiveRecord\Device;
+use common\models\ActiveRecord\Store;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;
@@ -24,15 +24,16 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Добавить Устройство', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
-    <?php Pjax::begin(); ?>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'filterOnFocusOut' => 'true',
+        'pjax' => true,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-            'serial_numb',
+            'serial_number',
             [
                 'attribute' => 'store_id',
                 'label' => 'Название склада',
@@ -50,8 +51,7 @@ $this->params['breadcrumbs'][] = $this->title;
             [
                 'attribute' => 'created_at',
                 'label' => 'Дата создания',
-                'format' => ['datetime', 'php:d.m.Y H:i'],
-                
+                'format' => ['datetime', 'php:d.m.Y H:i'],   
             ],
             
             [
@@ -64,8 +64,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'responsive'=>true,
             'hover'=>true
     ]); ?>
-
-    <?php Pjax::end(); ?>
 
     <?php 
        

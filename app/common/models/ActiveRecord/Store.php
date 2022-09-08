@@ -1,10 +1,11 @@
 <?php
 
-namespace frontend\models;
+namespace common\models\ActiveRecord;
 
 use Yii;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
+use yii\db\Expression;
 
 class Store extends ActiveRecord{
 
@@ -41,6 +42,7 @@ class Store extends ActiveRecord{
                      'attributes' => [
                          ActiveRecord::EVENT_BEFORE_INSERT => ['created_at']
                      ],
+                     'value' => new Expression('NOW()'),
                  ],
              ];
     }

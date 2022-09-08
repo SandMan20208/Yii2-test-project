@@ -1,6 +1,7 @@
 <?php
 return [
     'language' => 'ru-RU',
+    'timeZone' => 'UTC',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
@@ -12,7 +13,7 @@ return [
         ],
         'formatter' => [
             'class' => 'yii\i18n\Formatter',
-            'defaultTimeZone' => 'Europe/Moscow',
+            //'defaultTimeZone' => 'UTC',
             'timeZone' => 'GMT+3',
             'dateFormat' => 'd MMMM yyyy',
             'datetimeFormat' => 'd-M-Y H:i:s',

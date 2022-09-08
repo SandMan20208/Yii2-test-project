@@ -20,7 +20,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id') ?>
 
-    <?= $form->field($model, 'serial_numb') ?>
+    <?= $form->field($model, 'serial_number') ?>
 
     <?= $form->field($model, 'store_id') ?>
 

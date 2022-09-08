@@ -1,27 +1,26 @@
 <?php
 
-namespace frontend\models;
+namespace common\models\SearchModels;
 
-use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use frontend\models\Store;
+use common\models\ActiveRecord\Device;
 
 /**
- * StoreSearch represents the model behind the search form of `frontend\models\Store`.
+ * DeviceSearch represents the model behind the search form of `frontend\models\Device`.
  */
-class StoreSearch extends Store
+class DeviceSearch extends Device
 {
     /**
      * {@inheritdoc}
      */
-
-    
     public function rules()
     {
         return [
-            [['store_name'], 'string'],
-            [['created_at'], 'integer'],
+            [['id', 'store_id'], 'integer'],
+            ['serial_number', 'string'],
+            ['created_at', 'string'],
+            [['store_id'], 'safe'],
         ];
     }
 
@@ -43,7 +42,7 @@ class StoreSearch extends Store
      */
     public function search($params)
     {
-        $query = Store::find();
+        $query = Device::find();
 
         // add conditions that should always apply here
 
@@ -64,11 +63,13 @@ class StoreSearch extends Store
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'store_name' => $this->store_name,
-            'created_at' => $this->created_at,
-        ]);
-    
-
+            'id' => $this->id,
+            'store_id' => $this->store_id,
+        ])
+            ->andFilterWhere(['like', new \yii\db\Expression('DATE_FORMAT(created_at, "%d.%m.%Y %H:%i")'),$this->created_at])
+            ->andFilterWhere(['like', 'serial_number', $this->serial_number])
+        ;
+   
         return $dataProvider;
     }
 }

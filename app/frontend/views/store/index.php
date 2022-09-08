@@ -6,10 +6,10 @@ use kartik\grid\GridView;
 use yii\grid\ActionColumn;
 use yii\bootstrap\Dropdown;
 use yii\bootstrap\Widget;
-use Yii;
 use yii\helpers\ArrayHelper;
 use yii\widgets\Pjax;
-use frontend\models\Store;
+use yii\bootstrap5\Modal;
+//use common\models\ActiveRecord\Store;
 
 /* @var $this yii\web\View */
 /* @var $searchModel frontend\models\StoreSearch */
@@ -26,19 +26,23 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Добавить Склад', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
-    
-
-    <?php Pjax::begin(); ?>
     <?php //echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'filterOnFocusOut' => 'true',
+        'pjax' => true,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-            
-            'store_name',
+            [
+                'attribute' => 'store_name',
+                'format' => 'raw',
+                'label' => 'Название склада',
+                'value' => function($data){
+                    return Html::tag('span', $data->store_name, ['class' => 'device-list']);
+                },
+            ],
             [
                 'attribute' => 'created_at',
                 'label' => 'Дата создания',
@@ -53,10 +57,26 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
         'responsive'=>true,
         'hover'=>true
-    ]); 
-    ?>
-    
-    <?php Pjax::end(); ?>
+    ]);?>
 
+	<?php Modal::begin([
+            'id' => 'device',
+        ]);     
+    ?>
+
+    <div class="modal-body__title">
+        
+    </div>
+    <?php Modal::end(); ?>
+<?php
+    $this->registerJs("
+        $('#device').find('.modal-header').prepend('<h4>Список устройств</h4>');
+        $('.device-list').on('click', function(){
+            let data = $(this).parent().parent().data();
+            $('#device').modal('show');
+            $('#device').find('.modal-body').load('/store/device?id=' + data.key);
+        });
+    ");
+?>
 
 </div>

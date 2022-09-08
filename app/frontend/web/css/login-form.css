@@ -54,3 +54,9 @@
     text-align: center;
     color: red;
 }
+
+.device-list:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(24, 97, 255);
+}

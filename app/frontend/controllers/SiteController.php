@@ -2,16 +2,15 @@
 
 namespace frontend\controllers;
 
-use frontend\models\ResendVerificationEmailForm;
-use frontend\models\VerifyEmailForm;
 use Yii;
 use yii\base\InvalidArgumentException;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-use frontend\models\LoginForm;
-use frontend\models\Users;
+use common\models\User;
+use common\models\LoginForm;
+
 
 /**
  * Site controller
@@ -22,17 +21,15 @@ class SiteController extends Controller
     /**
      * {@inheritdoc}
      */
-/*    public function behaviors()
+    public function behaviors()
     {
         return [
             'access' => [
                 'class' => AccessControl::class,
-                'only' => ['logout', 'signup'],
                 'rules' => [
                     [
-                        'actions' => ['signup'],
+                        'actions' => ['index'],
                         'allow' => true,
-                        'roles' => ['?'],
                     ],
                     [
                         'actions' => ['logout'],
@@ -47,6 +44,7 @@ class SiteController extends Controller
                     'logout' => ['post'],
                 ],
             ],
+            
         ];
     }
 
@@ -73,36 +71,33 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $message ='';
-        $session = Yii::$app->session;
-        $model = new LoginForm();
-        if ($model ->load(Yii::$app->request->post())){
-            $modelUser = Users::find() -> where(['username' => $model -> username])->one();
-
-            if (password_verify($model -> password, $modelUser -> password)){
-                $session['user'] = ['username' => $modelUser -> username];
-                return $this -> redirect('index.php?r=store%2Findex');
-            } else{
-                $message = 'Неверный логин или пароль';
-            }
+        if (!Yii::$app->user->isGuest) {
+            return $this->goHome();
         }
-        return $this -> render('index', ['model' => $model, 'message' => $message]);
-        
+
+        $model = new LoginForm();
+        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+            return $this->redirect('/store/index');
+        }
+
+        $model->password = '';
+
+        return $this->render('index', [
+            'model' => $model,
+        ]);    
     }
 
-    public function actionLoginout()
+
+    /**
+     * Logout action.
+     *
+     * @return Response
+     */
+    public function actionLogout()
     {
-        $session = Yii::$app->session;
-        $session -> open();
-        if (isset($session['user']))
-        {
-            unset($session['user']);
-        } 
-        $session->close();
-        return $this -> redirect('index.php?r=site%2Findex');
-    }
+        Yii::$app->user->logout();
 
- 
-    
+        return $this->goHome();
+    }    
    
 }

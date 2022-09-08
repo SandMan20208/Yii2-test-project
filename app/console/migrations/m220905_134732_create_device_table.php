@@ -3,27 +3,21 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `{{%store}}`.
+ * Handles the creation of table `{{%device}}`.
  */
-class m220828_110145_create_store_table extends Migration
+class m220905_134732_create_device_table extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('{{%store}}', [
+        $this->createTable('{{%device}}', [
             'id' => $this->primaryKey(),
-            'store_name' => $this->string()->unique(),
-            'created_at' => $this->integer(11)->notNull()
+            'serial_number' => $this->string()->notNull()->unique(),
+            'store_id' => $this->integer()->defaultValue(null),
+            'created_at' => $this->dateTime()->notNull()
         ]);
-        
-
-        $this->createIndex(
-            'idx-store_id',
-            'device',
-            'store_id'
-        );
 
         $this->addForeignKey(
             'fk-store_id', 
@@ -33,19 +27,16 @@ class m220828_110145_create_store_table extends Migration
             'id', 
             'SET NULL',
             'SET NULL'
-        );      
+        );
 
     }
 
-    
     /**
      * {@inheritdoc}
      */
     public function safeDown()
     {
         $this->dropForeignKey('fk-store_id', 'device');
-
-        $this->dropTable('{{%store}}');
-
+        $this->dropTable('{{%device}}');
     }
 }

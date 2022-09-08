@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model frontend\models\Device */
+/* @var $model common\models\ActiveRecord\Device */
 
 $this->title = 'Редактировать Склад ';
 $this->params['breadcrumbs'][] = ['label' => 'Устройства', 'url' => ['index']];

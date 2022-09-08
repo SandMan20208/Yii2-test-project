@@ -2,12 +2,13 @@
 
 namespace frontend\controllers;
 
-use frontend\models\Device;
-use frontend\models\DeviceSearch;
+use common\models\ActiveRecord\Device;
+use common\models\SearchModels\DeviceSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use Yii;
+use yii\filters\AccessControl;
 
 /**
  * DeviceController implements the CRUD actions for Device model.
@@ -22,6 +23,15 @@ class DeviceController extends Controller
         return array_merge(
             parent::behaviors(),
             [
+                'access' => [
+                    'class' => AccessControl::class,
+                    'rules' => [
+                        [
+                            'allow' => true,
+                            'roles' => ['@'],
+                        ],
+                    ],
+                ],
                 'verbs' => [
                     'class' => VerbFilter::className(),
                     'actions' => [
@@ -32,6 +42,7 @@ class DeviceController extends Controller
         );
     }
 
+
     /**
      * Lists all Device models.
      *
@@ -39,10 +50,9 @@ class DeviceController extends Controller
      */
     public function actionIndex()
     {
-        $this->loginCheck();
         $searchModel = new DeviceSearch();
         $dataProvider = $searchModel->search($this->request->queryParams);
-        
+
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
@@ -57,7 +67,6 @@ class DeviceController extends Controller
      */
     public function actionView($id)
     {   
-        $this->loginCheck();
         //$this->renderAjax();
         return $this->render('view', [
             'model' => $this->findModel($id),
@@ -71,7 +80,6 @@ class DeviceController extends Controller
      */
     public function actionCreate()
     {   
-        $this->loginCheck();
         $model = new Device();      
         if ($this->request->isPost) {
             if ($model->load($this->request->post()) && $model->save()) {
@@ -95,7 +103,6 @@ class DeviceController extends Controller
      */
     public function actionUpdate($id)
     {
-        $this->loginCheck();
         $model = $this->findModel($id);
 
         if ($this->request->isPost && $model->load($this->request->post()) && $model->save()) {
@@ -116,7 +123,6 @@ class DeviceController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->loginCheck();
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
@@ -139,14 +145,4 @@ class DeviceController extends Controller
         throw new NotFoundHttpException('The requested page does not exist.');
     }
 
-
-    protected function loginCheck()
-	{
-		$session = Yii::$app->session;
-		if (!(isset($session['user']))){
-            return $this->redirect('index.php?r=site%2Findex');
-        } 
- 
-        $session->close();
-	}
 }

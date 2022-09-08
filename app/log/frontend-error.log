@@ -28,3 +28,843 @@
 2022/08/31 23:43:08 [error] 16#16: *622 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'Yii' has no effect in /var/www/app/frontend/views/store/index.php on line 9" while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=store%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php?r=device%2Findex"
 2022/08/31 23:44:02 [error] 16#16: *629 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'Yii' has no effect in /var/www/app/frontend/views/store/index.php on line 9" while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=store%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php?r=store%2Fcreate"
 2022/09/01 06:59:01 [error] 16#16: *8 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'Yii' has no effect in /var/www/app/frontend/views/store/index.php on line 9" while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=store%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/"
+2022/09/01 13:09:10 [error] 16#16: *282 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'Yii' has no effect in /var/www/app/frontend/views/store/index.php on line 9" while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=store%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php?r=site%2Findex"
+2022/09/01 13:09:34 [error] 16#16: *284 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'Yii' has no effect in /var/www/app/frontend/views/store/index.php on line 9" while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=store%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php?r=site%2Findex"
+2022/09/01 13:10:13 [error] 16#16: *290 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'Yii' has no effect in /var/www/app/frontend/views/store/index.php on line 9" while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=store%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php?r=site%2Findex"
+2022/09/05 11:29:50 [error] 18#18: *676 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array" while reading upstream, client: 172.18.0.1, server: , request: "POST /index.php?r=site%2Flogout HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/"
+2022/09/05 11:29:50 [error] 18#18: *676 FastCGI sent in stderr: ", Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "POST /index.php?r=site%2Flogout HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/"
+2022/09/05 11:30:23 [error] 18#18: *685 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array" while reading upstream, client: 172.18.0.1, server: , request: "POST /index.php?r=site%2Flogout HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php"
+2022/09/05 11:30:23 [error] 18#18: *685 FastCGI sent in stderr: ", Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "POST /index.php?r=site%2Flogout HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php"
+2022/09/05 11:30:48 [error] 17#17: *693 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array" while reading upstream, client: 172.18.0.1, server: , request: "POST /index.php?r=site%2Flogout HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php?r=store%2Findex"
+2022/09/05 11:30:48 [error] 17#17: *693 FastCGI sent in stderr: ", Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "POST /index.php?r=site%2Flogout HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php?r=store%2Findex"
+2022/09/05 11:31:16 [error] 17#17: *696 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=site%2Flogin HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php"
+2022/09/05 11:31:23 [error] 17#17: *701 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=site%2Flogin HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php"
+2022/09/05 11:31:28 [error] 17#17: *703 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=site%2Flogin HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/05 11:32:04 [error] 17#17: *706 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\Ac" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=site%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/05 11:32:04 [error] 17#17: *706 FastCGI sent in stderr: "tionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=site%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/05 11:32:09 [error] 17#17: *709 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\Ac" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=site%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php"
+2022/09/05 11:32:09 [error] 17#17: *709 FastCGI sent in stderr: "tionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=site%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php"
+2022/09/05 11:32:15 [error] 17#17: *713 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\Ac" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=site%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php"
+2022/09/05 11:32:15 [error] 17#17: *713 FastCGI sent in stderr: "tionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=site%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php"
+2022/09/05 11:32:20 [error] 17#17: *716 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\Ac" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=site%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php"
+2022/09/05 11:32:20 [error] 17#17: *716 FastCGI sent in stderr: "tionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=site%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php"
+2022/09/05 11:32:40 [error] 17#17: *720 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=index HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php"
+2022/09/05 11:33:41 [error] 17#17: *731 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEven" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=site HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php?r=store"
+2022/09/05 11:33:41 [error] 17#17: *731 FastCGI sent in stderr: "t))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=site HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php?r=store"
+2022/09/05 11:33:56 [error] 16#16: *736 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEven" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=site HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/05 11:33:56 [error] 16#16: *736 FastCGI sent in stderr: "t))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=site HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/05 11:34:19 [error] 16#16: *740 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=site%252Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/05 11:34:37 [error] 16#16: *743 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\Ac" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=site%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/05 11:34:37 [error] 16#16: *743 FastCGI sent in stderr: "tionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=site%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/05 11:42:49 [error] 16#16: *761 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=store%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php?r=site%2Findex"
+2022/09/05 11:42:49 [error] 16#16: *761 FastCGI sent in stderr: ", Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?r=store%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php?r=site%2Findex"
+2022/09/05 11:43:21 [error] 16#16: *766 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array" while reading upstream, client: 172.18.0.1, server: , request: "POST /index.php?r=site%2Flogout HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php?r=store%2Findex"
+2022/09/05 11:43:21 [error] 16#16: *766 FastCGI sent in stderr: ", Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "POST /index.php?r=site%2Flogout HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php?r=store%2Findex"
+2022/09/05 11:43:53 [error] 16#16: *768 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array" while reading upstream, client: 172.18.0.1, server: , request: "POST /index.php?r=site%2Flogout HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php?r=store%2Findex"
+2022/09/05 11:43:53 [error] 16#16: *768 FastCGI sent in stderr: ", Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "POST /index.php?r=site%2Flogout HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php?r=store%2Findex"
+2022/09/06 10:54:19 [error] 18#18: *489 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\base\InvalidConfigException: Unknown component ID: request in /var/www/app/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/base/Module.php(766): yii\di\ServiceLocator->get('request', true)
+#1 /var/www/app/vendor/yiisoft/yii2/web/Application.php(160): yii\base\Module->get('request')
+#2 /var/www/app/vendor/yiisoft/yii2/base/Component.php(139): yii\web\Application->getRequest()
+#3 /var/www/app/vendor/yiisoft/yii2/di/ServiceLocator.php(77): yii\base\Component->__get('request')
+#4 /var/www/app/vendor/yiisoft/yii2/web/ErrorHandler.php(503): yii\di\ServiceLocator->__get('request')
+#5 /var/www/app/vendor/yiisoft/yii2/web/ErrorHandler.php(116): yii\web\ErrorHandler->shouldRenderSimpleHtml()
+#6 /var/www/app/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\base\UnknownPropertyException))
+#7 [internal function]: yii\base\ErrorHandler->handleException(O" while reading upstream, client: 172.18.0.1, server: , request: "GET /index.php?StoreSearch%5Bstore_name%5D=&StoreSearch%5Bcreated_at%5D=&r=store%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/06 10:54:44 [error] 18#18: *491 FastCGI sent in stderr: "PHP message: PHP Notice:  date_default_timezone_set(): Timezone ID 'GMT+6' is invalid in /var/www/app/vendor/yiisoft/yii2/base/Application.php on line 488" while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /index.php?StoreSearch%5Bstore_name%5D=&StoreSearch%5Bcreated_at%5D=&r=store%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/06 10:54:54 [error] 18#18: *493 FastCGI sent in stderr: "PHP message: PHP Notice:  date_default_timezone_set(): Timezone ID 'GMT+6' is invalid in /var/www/app/vendor/yiisoft/yii2/base/Application.php on line 488" while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /index.php?StoreSearch%5Bstore_name%5D=&StoreSearch%5Bcreated_at%5D=13&r=store%2Findex&_pjax=%23w0-pjax HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php?StoreSearch%5Bstore_name%5D=&StoreSearch%5Bcreated_at%5D=&r=store%2Findex"
+2022/09/06 10:55:00 [error] 18#18: *495 FastCGI sent in stderr: "PHP message: PHP Notice:  date_default_timezone_set(): Timezone ID 'GMT+6' is invalid in /var/www/app/vendor/yiisoft/yii2/base/Application.php on line 488" while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /index.php?StoreSearch%5Bstore_name%5D=&StoreSearch%5Bcreated_at%5D=13%5E08&r=store%2Findex&_pjax=%23w0-pjax HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php?StoreSearch%5Bstore_name%5D=&StoreSearch%5Bcreated_at%5D=13&r=store%2Findex"
+2022/09/06 10:55:04 [error] 18#18: *497 FastCGI sent in stderr: "PHP message: PHP Notice:  date_default_timezone_set(): Timezone ID 'GMT+6' is invalid in /var/www/app/vendor/yiisoft/yii2/base/Application.php on line 488" while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /index.php?StoreSearch%5Bstore_name%5D=&StoreSearch%5Bcreated_at%5D=13%3A08&r=store%2Findex&_pjax=%23w0-pjax HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php?StoreSearch%5Bstore_name%5D=&StoreSearch%5Bcreated_at%5D=13%5E08&r=store%2Findex"
+2022/09/06 10:55:13 [error] 18#18: *499 FastCGI sent in stderr: "PHP message: PHP Notice:  date_default_timezone_set(): Timezone ID 'GMT+6' is invalid in /var/www/app/vendor/yiisoft/yii2/base/Application.php on line 488" while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /index.php?StoreSearch%5Bstore_name%5D=&StoreSearch%5Bcreated_at%5D=13%3A08&r=store%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/06 10:55:17 [error] 18#18: *501 FastCGI sent in stderr: "PHP message: PHP Notice:  date_default_timezone_set(): Timezone ID 'GMT+6' is invalid in /var/www/app/vendor/yiisoft/yii2/base/Application.php on line 488" while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /index.php?StoreSearch%5Bstore_name%5D=&StoreSearch%5Bcreated_at%5D=&r=store%2Findex&_pjax=%23w0-pjax HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/index.php?StoreSearch%5Bstore_name%5D=&StoreSearch%5Bcreated_at%5D=13%3A08&r=store%2Findex"
+2022/09/06 10:55:18 [error] 18#18: *501 FastCGI sent in stderr: "PHP message: PHP Notice:  date_default_timezone_set(): Timezone ID 'GMT+6' is invalid in /var/www/app/vendor/yiisoft/yii2/base/Application.php on line 488" while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /index.php?StoreSearch%5Bstore_name%5D=&StoreSearch%5Bcreated_at%5D=&r=store%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/06 10:57:24 [error] 18#18: *515 FastCGI sent in stderr: "PHP message: PHP Notice:  date_default_timezone_set(): Timezone ID 'UTC+3' is invalid in /var/www/app/vendor/yiisoft/yii2/base/Application.php on line 488" while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /index.php?StoreSearch%5Bstore_name%5D=&StoreSearch%5Bcreated_at%5D=&r=store%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/07 10:13:22 [error] 17#17: *84 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/1?_pjax=%23w4-pjax HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 10:13:22 [error] 17#17: *84 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/1 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 11:09:47 [error] 17#17: *175 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/store/index?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index?StoreSearch%5Bstore_name%5D=%D1%81%D0%BA%D0%BB&StoreSearch%5Bcreated_at%5D="
+2022/09/07 11:09:50 [error] 17#17: *178 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/store/index?id=3 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index?StoreSearch%5Bstore_name%5D=%D1%81%D0%BA%D0%BB&StoreSearch%5Bcreated_at%5D="
+2022/09/07 11:10:34 [error] 19#19: *183 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/store/index?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index?StoreSearch%5Bstore_name%5D=&StoreSearch%5Bcreated_at%5D="
+2022/09/07 11:10:39 [error] 19#19: *185 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/store/index?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 11:15:38 [error] 19#19: *199 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/store/index?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 11:16:00 [error] 16#16: *208 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/store/index?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 11:18:16 [error] 16#16: *220 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/store/index?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 11:18:21 [error] 18#18: *228 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/store/index?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 11:22:13 [error] 18#18: *234 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/store/index?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 11:23:40 [error] 18#18: *248 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/store/index?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 11:23:42 [error] 18#18: *250 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/store/index?id=3 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 11:23:46 [error] 18#18: *252 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/store/index?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 11:27:31 [error] 17#17: *254 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device/index?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 11:28:09 [error] 19#19: *258 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device/view?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 11:38:23 [error] 16#16: *313 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/store/view?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 11:39:05 [error] 18#18: *317 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/store/view?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 16:01:23 [error] 16#16: *324 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/store/view?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 16:01:26 [error] 18#18: *330 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/store/view?id=3 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 16:01:29 [error] 18#18: *330 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/store/view?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 16:01:31 [error] 18#18: *334 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/store/view?id=3 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 16:19:50 [error] 16#16: *405 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/update?id=undefined HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 16:19:53 [error] 18#18: *410 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/update?id=undefined HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 16:21:15 [error] 17#17: *415 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/update?id=undefined HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 16:24:30 [error] 19#19: *451 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/view?id=undefined HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 16:24:33 [error] 19#19: *452 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/view?id=undefined HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 16:24:34 [error] 19#19: *452 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/view?id=undefined HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:10:59 [error] 19#19: *497 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_fu" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:10:59 [error] 19#19: *497 FastCGI sent in stderr: "nc(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:12:25 [error] 19#19: *500 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_fu" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:12:25 [error] 19#19: *500 FastCGI sent in stderr: "nc(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:13:38 [error] 16#16: *515 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_fu" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:13:38 [error] 16#16: *515 FastCGI sent in stderr: "nc(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:14:02 [error] 17#17: *522 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_fu" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:14:02 [error] 17#17: *522 FastCGI sent in stderr: "nc(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:14:05 [error] 17#17: *524 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_fu" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=3 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:14:05 [error] 17#17: *524 FastCGI sent in stderr: "nc(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=3 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:14:11 [error] 16#16: *532 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_fu" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:14:11 [error] 16#16: *532 FastCGI sent in stderr: "nc(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:19:48 [error] 16#16: *535 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_fu" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:19:48 [error] 16#16: *535 FastCGI sent in stderr: "nc(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:20:19 [error] 16#16: *542 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_fu" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:20:19 [error] 16#16: *542 FastCGI sent in stderr: "nc(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:20:54 [error] 18#18: *550 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_fu" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:20:54 [error] 18#18: *550 FastCGI sent in stderr: "nc(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:21:08 [error] 18#18: *554 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_fu" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:21:08 [error] 18#18: *554 FastCGI sent in stderr: "nc(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:21:39 [error] 17#17: *557 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_fu" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:21:39 [error] 17#17: *557 FastCGI sent in stderr: "nc(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:21:45 [error] 18#18: *564 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_fu" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:21:45 [error] 18#18: *564 FastCGI sent in stderr: "nc(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device?id=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/store/index"
+2022/09/07 17:22:06 [error] 17#17: *566 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_fu" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/07 17:22:06 [error] 17#17: *566 FastCGI sent in stderr: "nc(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/07 17:22:51 [error] 19#19: *589 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/07 17:23:07 [error] 19#19: *591 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/07 17:24:39 [error] 16#16: *609 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/07 17:26:28 [error] 18#18: *634 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/07 17:26:38 [error] 18#18: *637 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /site/image/logo.jpg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/site/index"
+2022/09/07 17:27:32 [error] 17#17: *652 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /site/image/logo.jpg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/site/index"
+2022/09/07 17:27:36 [error] 17#17: *658 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /site/image/logo.jpg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/site/index"
+2022/09/07 17:27:40 [error] 17#17: *661 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /site/image/logo.jpg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/site/index"
+2022/09/07 17:27:46 [error] 17#17: *667 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /site/store/index HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/site/index"
+2022/09/07 17:28:16 [error] 17#17: *670 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /site/image/logo.jpg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/site/index"
+2022/09/07 17:28:28 [error] 17#17: *682 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/07 17:34:29 [error] 19#19: *702 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/07 17:35:12 [error] 19#19: *704 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Вам не разрешено производить данное действие. in /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /var/www/app/vendor/yiisoft/y" while reading upstream, client: 172.18.0.1, server: , request: "GET /store/device HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080"
+2022/09/08 09:44:38 [error] 17#17: *298 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /site/image/logo.jpg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/site/index"
+2022/09/08 09:44:45 [error] 17#17: *304 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /site/image/logo.jpg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/site/index"
+2022/09/08 09:51:58 [error] 19#19: *311 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /site/image/logo.jpg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/site/index"
+2022/09/08 09:52:20 [error] 19#19: *317 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /site/image/logo.jpg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/site/index"
+2022/09/08 09:53:00 [error] 19#19: *322 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Требуется вход. in /var/www/app/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/app/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/app/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /var/www/app/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/app/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/app/vendor/yiisoft/yii2/web/Controller.php(218): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7" while reading upstream, client: 172.18.0.1, server: , request: "GET /web/image/logo.jpg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "localhost:8080", referrer: "http://localhost:8080/site/index"

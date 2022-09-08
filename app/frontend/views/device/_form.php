@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use frontend\models\Store;
+use common\models\ActiveRecord\Store;
 use kartik\select2\Select2;
 
 /* @var $this yii\web\View */
@@ -14,7 +14,7 @@ use kartik\select2\Select2;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'serial_numb')->textInput() ?>
+    <?= $form->field($model, 'serial_number')->textInput() ?>
     
     <?= $form->field($model, 'store_id')->widget(Select2::classname(), [
     'data' => Store::find()->select(['store_name','id'])->indexBy('id')->column(),
